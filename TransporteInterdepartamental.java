@@ -1,5 +1,38 @@
-
+/**
+ * Clase principal que representa una aplicación para modelar rutas
+ * de transporte interdepartamental en Guatemala usando un grafo dirigido.
+ *
+ * Utiliza la clase {@link Graph} para representar ciudades como vértices,
+ * rutas como aristas con pesos (distancias en kilómetros) y el algoritmo
+ * de Floyd-Warshall para calcular distancias mínimas entre todas las ciudades.
+ *
+ * Funcionalidades:
+ * <ul>
+ *   <li>Crear un grafo con 5 ciudades</li>
+ *   <li>Agregar conexiones con distancias entre las ciudades</li>
+ *   <li>Imprimir la matriz de adyacencia</li>
+ *   <li>Aplicar el algoritmo de Floyd-Warshall</li>
+ *   <li>Determinar el centro del grafo (ciudad con menor excentricidad)</li>
+ *   <li>Mostrar las rutas más eficientes desde Ciudad de Guatemala</li>
+ * </ul>
+ * 
+ * Las ciudades representadas son:
+ * <ul>
+ *   <li>0 - Ciudad de Guatemala</li>
+ *   <li>1 - Zacapa</li>
+ *   <li>2 - Chiquimula</li>
+ *   <li>3 - Quetzaltenango</li>
+ *   <li>4 - Cobán</li>
+ * </ul>
+ * 
+ * @author Diana
+ */
 public class TransporteInterdepartamental {
+
+    /**
+     * Método principal que ejecuta la lógica del programa.
+     * @param args Argumentos de línea de comandos (no utilizados)
+     */
     public static void main(String[] args) {
         Graph graph = new Graph(5);
         
@@ -50,3 +83,4 @@ public class TransporteInterdepartamental {
         }
     }
 }
+
